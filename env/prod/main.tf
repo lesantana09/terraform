@@ -1,14 +1,11 @@
 module "Producao" {
-  source = "../../infra"
+    source = "../../infra"
 
-  nome = "producao"
-  cargoIAM = "producao"
-  descricao = "aplicacao-de-producao"
-  max = 5
-  maquina = "t2.micro"
-  ambiente = "ambiente-de-producao"
+    nome_repositorio = "Producao"
+    cargoIAM = "Producao"
+    ambiente = "Producao"
 }
 
-output "ip_alb" {
-  value = module.Producao.ip
+output "IP_alb" {
+  value = module.Producao.IP
 }

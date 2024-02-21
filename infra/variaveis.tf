@@ -1,22 +1,11 @@
-variable "nome" {
+variable "nome_repositorio" {
   type = string
 }
 
-variable "descricao" {
-  type = string
-}
-
-variable "max" {
-  type = number
-}
-
-variable "maquina" {
+variable "cargoIAM" {
   type = string
 }
 
 variable "ambiente" {
   type = string
-}
-variable "cargoIAM" {
-  type = string 
 }
